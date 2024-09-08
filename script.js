@@ -13,4 +13,21 @@ document.addEventListener('DOMContentLoaded', function() {
         this.querySelector('.thumbnail').style.opacity = '1';
       });
     });
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const sidebar = document.querySelector('.sidebar');
+
+    hamburgerMenu.addEventListener('click', () => {
+        sidebar.classList.toggle('collapsed');
+        document.body.classList.toggle('collapsed-sidebar');
+        console.log("Sidebar toggled"); 
+    });
+    const uploadButton = document.querySelector('.upload-icon-container');
+    uploadButton.addEventListener('click', () => {
+        alert('Upload functionality not implemented yet');
+    });
+    const searchButton = document.querySelector('.search-button');
+    searchButton.addEventListener('click', () => {
+        const searchBar = document.querySelector('.search-bar');
+        alert(`Search for: ${searchBar.value} (Functionality not implemented yet)`);
+    });
 });
