@@ -243,3 +243,14 @@ body {
   .site-footer p {
     margin: 0;
   }
+.collapsed {
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+body.collapsed-sidebar {
+    padding-left: 24px; 
+}
+.sidebar.collapsed .sidebar-link {
+    display: none;
+}
